@@ -28,6 +28,7 @@ class BasicTestCase(unittest.TestCase):
 
         rv = self.app.post('/register', json=req)
         data = json.loads(rv.data)
+        print(data)
         assert data['Result'] == True
 
 
@@ -39,6 +40,7 @@ class BasicTestCase(unittest.TestCase):
         }
         rv = self.app.post('/login', json=req)
         data = json.loads(rv.data)
+        print(data)
         assert data['Result'] == True
 
 
@@ -56,6 +58,8 @@ class BasicTestCase(unittest.TestCase):
 
         rv = self.app.post('/update-user-info', json=req)
         data = json.loads(rv.data)
+        print(data)
+
         assert data['Result'] == True
 
 
@@ -67,6 +71,8 @@ class BasicTestCase(unittest.TestCase):
 
         rv = self.app.post('/delete', json=req)
         data = json.loads(rv.data)
+        print(data)
+
         assert data['Result'] == True
 
     

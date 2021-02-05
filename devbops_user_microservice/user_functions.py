@@ -37,7 +37,7 @@ class Users:
         # this function first verfiys that the username and email are available to use
         # if one or the other is not available we return false
         # if available we call our put function that pushes items to db
-        if self.check_if_user_exists(user) and self.check_if_user_exists_email(email):
+        if self.check_if_user_exists(user):
             self.put(user, currentcity, currentcountry, email, firstname, lastname, password)
             return True
         else:

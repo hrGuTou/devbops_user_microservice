@@ -17,9 +17,9 @@ class BasicTestCase(unittest.TestCase):
     def test_1_signup(self):
         req = {
             "Action":"register",
-            "Username":"QA_Tester_Dec",
+            "Username":"QA_Tester_haoran",
             "Password":"password12345678",
-            "Email":"QA@gmail.com",
+            "Email":"QA1@gmail.com",
             "FirstName":"Quality",
             "LastName":"Assurance",
             "Country":"USA",

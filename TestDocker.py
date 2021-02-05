@@ -11,7 +11,7 @@ class TestDocker(unittest.TestCase):
             "Username": "test",
             "Password": "test"
         }
-        rv = requests.post('http://127.0.0.1:4040/login', json=req, headers=headers)
+        rv = requests.post('http://172.25.22.75:4040/login', json=req, headers=headers)
 
         assert rv.status_code == 200
 

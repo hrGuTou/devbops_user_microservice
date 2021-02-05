@@ -36,7 +36,7 @@ class BasicTestCase(unittest.TestCase):
     def test_2_login(self):
 
         req = {
-            "Username":"QA_Tester_Dec",
+            "Username":"QA_Tester_haoran",
             "Password":"password12345678"
         }
         rv = self.app.post('/login', json=req)
@@ -50,7 +50,7 @@ class BasicTestCase(unittest.TestCase):
     def test_3_update_info(self):
 
         req = {
-            "Username":"QA_Tester_Dec",
+            "Username":"QA_Tester_haoran",
             "FirstName":"New_first_name",
             "LastName":"New_last_name",
             "City":"New_city",
@@ -71,7 +71,7 @@ class BasicTestCase(unittest.TestCase):
     def test_4_delete(self):
 
         req = {
-            "Username":"QA_Tester_Dec"
+            "Username":"QA_Tester_haoran"
         }
 
         rv = self.app.post('/delete', json=req)

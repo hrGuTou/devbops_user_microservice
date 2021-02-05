@@ -15,4 +15,4 @@ class TestDocker(unittest.TestCase):
         assert rv.status_code == 202
 
 if __name__ == '__main__':
-    TestDocker.run()
+    unittest.main()
